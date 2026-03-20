@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle at 10% 20%, #1a1f2e, #0b0d17);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    color: #e0e0e0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    background: rgba(18, 22, 35, 0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(90, 150, 255, 0.25);
+    border-radius: 2.5rem;
+    padding: 2.5rem;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    font-size: 2.4rem;
+    background: linear-gradient(135deg, #b0d0ff, #90c0ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.sub {
+    margin-bottom: 2rem;
+    color: #a0b5d4;
+    border-left: 3px solid #3f8aff;
+    padding-left: 1.2rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.file-label {
+    background: linear-gradient(145deg, #1e2a47, #121b30);
+    border: 1px solid #2f4890;
+    color: #c0e0ff;
+    padding: 0.9rem 2.2rem;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.file-label:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 80, 255, 0.4);
+}
+
+#excelFiles {
+    display: none;
+}
+
+.search-box {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.search-box i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6a8fda;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 1.2rem 3.5rem;
+    background: rgba(10, 15, 28, 0.8);
+    border: 2px solid #253968;
+    border-radius: 70px;
+    color: #ecf5ff;
+    outline: none;
+}
+
+.table-wrapper {
+    border-radius: 24px;
+    overflow: hidden;
+    background: rgba(8, 14, 26, 0.7);
+    border: 1px solid #2d4070;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #111c32;
+    color: #b5d6ff;
+    padding: 1.2rem;
+    text-align: left;
+}
+
+td {
+    padding: 1rem;
+    border-bottom: 1px solid #253355;
+    color: #d0e2ff;
+}
+
+tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.02);
+}
