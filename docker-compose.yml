@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  neo-blasting:
+    build: .
+    container_name: neo_blasting_app
+    ports:
+      - "80:3000" # Mapea el puerto 80 de la VM al 3000 del contenedor
+    volumes:
+      - ./data:/app/data # Para que la base de datos SQLite sea persistente
+    restart: always
+    env_file:
+      - .env
